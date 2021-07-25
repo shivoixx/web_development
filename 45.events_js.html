@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events and Listening to Events In JavaScript</title>
+    <style>
+      /* rough work of css, this is not related to the given topic. */
+      .container h2 {
+        border: 2px solid red;
+        background-color: salmon;
+        display: block;
+        margin: auto;
+        width: 300px;
+        text-align: center;
+      }
+      #btn {
+        border: 2px solid black;
+        background-color: red;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 10px 14px;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Events in JavaScript</h2>
+    <ul>
+      Browser Events:
+    </ul>
+    <li>Click</li>
+    <li>Contextmenu</li>
+    <li>Mouseover/mouseout</li>
+    <li>Mouseup/Mousedown</li>
+    <li>Mousemove</li>
+    <li>Submit</li>
+    <li>Focus</li>
+    <li>DomContentLoaded</li>
+    <li>transitionend</li>
+    <div class="container">
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis non
+        ullam nemo aliquam sapiente, reiciendis repellendus sit laborum quis
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis
+        ipsum commodi tempora architecto, blanditiis ea esse. Quisquam qui,
+        ipsa, soluta perferendis nobis odit voluptas ullam vitae voluptatem
+        necessitatibus magnam dicta dolorum eius consequatur. Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Error sapiente delectus possimus
+        voluptate quisquam dicta quaerat nulla aliquam? Quia facere asperiores
+        totam, ut impedit, ex eius aspernatur optio doloribus sed dignissimos
+        ea, dolorem nobis. Quas facere, ad consectetur accusamus voluptatum ut
+        illo aliquid facilis eaque voluptas iste est vero ex id libero soluta
+        nesciunt unde. obcaecati, laudantium dolore odio tempore.
+      </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+      funtion toggleHide(){
+          let btn = document.getElementById("btn");
+          let para = document.getElementById("para");
+          if(para.style.display != 'none')
+          {
+              para.style.display = 'none';
+          }
+          else{
+              para.style.display = 'block';
+               }
+
+
+      }
+    </script>
+  </body>
+</html>

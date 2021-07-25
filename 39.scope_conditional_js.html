@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      scoping and conditional statement(if-else, switch) in JavaScript
+    </title>
+    <script>
+      //Scoping is determining where variables, functions, and objects are accessible in your code during runtime. This means  the scope of a variable(where it can be accessed) is controlled by the location of the variable declaration.
+      // In Javascript, there are two scopes:
+      // Global Scope
+      // Local Scope
+      var string1 = "This is a string."; //global scope
+      console.log(string1);
+
+      let a = "43"; //global scope
+      console.log(a);
+
+      // "{}" it is called block. if we define variable in this block than the variable is only useable in this block not out of it. which is known as local scope.
+      {
+        let a = "26";
+        console.log(a);
+      }
+
+      console.log(a); //here it used the global scope "a", bcz it is out of the block.
+
+      //constant variables
+      const c = "this cannot be change";
+      console.log(c);
+
+      //conditional statements.
+      //1) if-else statement-
+      let age = 34;
+      if (age > 18) {
+        console.log("can be vote");
+      } else {
+        console.log("you cannot be vote");
+      }
+
+      //2)Switch case staement-
+      const cups = 42;
+      switch (cups) {
+        case 4:
+          console.log("the value of cup is 4")
+          break;
+        case 41:
+          console.log("the value of cup is 41")
+          break;
+        case 42:
+          console.log("the value of cup is 42")
+          break;
+        case 43:
+          console.log("the value of cup is 43")
+          break;
+      
+        default:
+        console.log("the value of cup is none of 4,41,42, and 43.")
+          break;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+      </ul>
+    </div>
+  </body>
+</html>

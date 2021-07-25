@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaction-Prompt,Alert,Confirm</title>
+    <script>
+      //Alert in-browser using JavaScript
+      alert("This is a message"); //it is a function that gives a message on pop-up bar.
+
+      //Prompt in-browser using JavaScript
+      let name = prompt("What is yopur name?", "Guest"); //it is a function that gives a message on pop-up bar to enter any value by user.
+      console.log(name);
+
+      //Confirm in-browser using JavaScript
+      let deletepost = confirm("Do you want to delete it?");//it is a function that gives a message on pop-up bar to confirm the user's action, example- delete, renew, reload,etc.
+    //console.log(deletepost);
+      if (deletepost){
+          console.log("YOur post deleted successfully.");
+      }
+      else{
+          console.log("YOur post can not be deleted successfully.");
+        }
+    </script>
+  </head>
+  <body>
+    <div class="conatiner">
+      <h2>text sample</h2>
+    </div>
+  </body>
+</html>

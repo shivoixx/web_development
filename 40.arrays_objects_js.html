@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays And Objects In JavaScript</title>
+    <script>
+      let myvar = 43;
+      let myvar2 = "string";
+      let myvar3 = "ture";
+      let myvar4 = "null";
+      let myvar5 = "undefined";
+
+      // Objects are variables too. But objects can contain many values.
+      //creating object
+      let employee = {
+        //here employee is an object.
+        name: "Shiv", //here name, salary etc are known as keys.
+        salary: 10000000,
+        channel1: "codewithharry",
+        "channel 2": "programmingithharry",
+      };
+      console.log(employee);
+
+      // An array is a special variable, which can hold more than one value at a time.
+      //syntax -  let array_name = [item1, item2, ...];
+      //cretating an array
+      let names = ["shivam", "mohit", "sidhath", "yash", 1, 2, 3];
+      console.log(names); //to print all elements of array.
+      console.log(names[1]); //to print a single element of array.
+      console.log(names.length); //to find the length of an array.
+      names = names.sort(); //to sort an array in acending order(small to large).
+      console.log(names);
+      names.push("sorab", 56); //to add more element in an array at the end we use push function.
+      console.log(names);
+
+      //to creat n numbers of elements in array
+      //syntax -  let array_name = [n];
+      let students = [26];
+      console.log(students);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Simple TExt</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for, while, forEach, Do while Loops in JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa
+        laudantium possimus nostrum, accusamus esse rem itaque fugit beatae
+        velit neque nemo aspernatur.
+      </p>
+    </div>
+    <script>
+      console.log("this is a text sample");
+      //For Loop
+      let i = 0;
+      for (i = 0; i <= 3; i++) {
+        console.log(i);
+      }
+
+      let friends = ["shivam", "Sorab", "yash", "harsh", "palak"];   //an array
+
+      //now we use "for" loop in an array.
+      for (
+        let index = 0;
+        index < friends.length;
+        index++                       //for loop
+      ) {
+        console.log("My group," + friends[index]); //statement
+      }
+
+      //now we use "forEach" loop for an array.
+      friends.forEach(function f(element) {
+        console.log("HEllow Friends," + element);
+      });
+
+      //now we use "for Of" loop in an array, (easy way)
+      for (element of friends){
+        console.log("HEllow Friends," + element + "by for of loop");
+      }
+
+      let employee = {       //object
+          name: "shiv",
+          salary: 2,
+          channal: "CWH",
+      }
+
+      //now we use "for In" loop in an object, we use this loop to iterate over object in javascript.
+      for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+      }
+
+
+    //"while" loop in js 
+    let j=0;
+    while(j<4){
+        console.log(`${j} is than 4`);
+        j++;
+    }
+
+
+    //"Do while" loop in js 
+    let z=0;
+    do{
+        console.log(`${z} is than 5`);
+        z++;
+    }while(z<5);
+    </script>
+  </body>
+</html>

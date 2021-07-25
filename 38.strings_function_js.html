@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings Functions</title>
+    <script>
+      var str = "This is a string.";
+      console.log(str);
+
+      //first occurance of a substring
+      var postition = str.indexOf("is"); //in str = "t-0 h-1 i-2 s-3 is a string" at postion 2 the 1st occurance starts.
+      console.log(postition);
+
+      //last occurance of a substring
+      var postition = str.lastIndexOf("is"); //i str="t-0 h-1 i-2 s-3 {space}-4 i-5 s a string" at position 5 the last occurance is got.
+      console.log(postition);
+
+      //how to get a substring from a string
+      var sbstr = str.slice(1, 6); //syntax= slice(start:number,end:number)
+      console.log(sbstr);
+      //some another ways to do this.
+      //var sbstr=str.substring(1,6);   syntax= slice(start:number,end:number)
+      //var sbstr=str.substr(1,6);   syntax= slice(start:number,end:number)
+
+      //to replace content of a string
+      var replace = str.replace("string", "Shiv");
+      console.log(replace);
+
+      //to make a string in uppercase/lowercase letters
+      console.log(str.toUpperCase());
+      console.log(str.toLowerCase());
+
+      //to add new string in old string.
+      var newstring = str.concat("bhaag bsdk");
+      console.log(newstring);
+
+      //to make many spaces b/w strings
+      var stringwithwhitespaces =
+        "    this     contain        white spaces.   ";
+      console.log(stringwithwhitespaces);
+      console.log(stringwithwhitespaces.trim()); //trim function is used to remove spaces from start and end position.
+
+      //to find a charchter at any index in a string.
+      var char = str.charAt(2);
+      console.log(char);
+
+      //to get the charchter code in a string.
+      var charcode = str.charCodeAt(2);
+      console.log(charcode);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>strings</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum soluta
+        neque. Eveniet, aut assumenda sequi, maiores voluptatem ea hic earum
+        error animi, ipsa minus cum sapiente veniam. Asperiores sapiente
+        mollitia quibusdam doloribus dolor.
+      </p>
+    </div>
+  </body>
+</html>
